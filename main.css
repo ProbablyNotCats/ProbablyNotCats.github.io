@@ -1,0 +1,17 @@
+/* Fonts */
+
+/*
+Title  | Comfortaa
+Link   | https://fonts.google.com/specimen/Comfortaa
+Weight | 300 to 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+    font-weight: 700;
+}
+
