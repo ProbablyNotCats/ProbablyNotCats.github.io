@@ -7,11 +7,52 @@ Weight | 300 to 700
 */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+:root {
+    --pnc-white: #e0e4ec;
+    --pnc-black: #201726;
+    --pnc-red: #ff5068;
+    --pnc-yellow: #ffdd47;
+    --pnc-blue: #6acbff;
+
+    --pnc-black-alpha:#201726bf;
+}
+
 body {
     font-family: 'Comfortaa', cursive;
+    color: var(--pnc-black);
 }
 
 h1 {
     font-weight: 700;
 }
 
+.index-fullpage {
+    height: 100vh;
+    background-image: url("assets/PNC\ Colorful\ Background\ Edit.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.color-black {
+    color: var(--pnc-black);
+}
+
+.color-white {
+    color: var(--pnc-white);
+}
+
+.title-bg {
+    background-color: var(--pnc-black-alpha);
+    backdrop-filter: blur(3px);
+    border-color: var(--pnc-white);
+    border-radius: 2rem;
+    padding: 12px;
+}
+
+.subtext {
+    color: var(--pnc-white);
+    font-weight: 600;
+    text-shadow: 
+    2px 2px 8px var(--pnc-black),
+    2px 2px 4px var(--pnc-black);
+}
