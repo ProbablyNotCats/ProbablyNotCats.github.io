@@ -8,6 +8,7 @@ Weight | 300 to 700
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 :root {
+    /* Static Values */
     --pnc-white: #e0e4ec;
     --pnc-black: #201726;
     --pnc-red: #ff5068;
@@ -15,6 +16,9 @@ Weight | 300 to 700
     --pnc-blue: #6acbff;
 
     --pnc-black-alpha:#201726bf;
+
+    /* JS Set */
+    --random-dir: 1;
 }
 
 body {
@@ -55,4 +59,13 @@ h1 {
     text-shadow: 
     2px 2px 8px var(--pnc-black),
     2px 2px 4px var(--pnc-black);
+}
+
+.hover-grow-tilt {
+    transition: ease-in-out 0.5s;
+}
+
+.hover-grow-tilt:hover {
+    transition: ease-in-out 0.1s;
+    transform: scale(1.2) rotate(calc(var(--random-dir) * 3deg));
 }
